@@ -1,4 +1,4 @@
-package com.neobis.tourguidestudyplan
+package com.neobis.tourguidestudyplan.model
 
 
 data class Place(

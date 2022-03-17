@@ -1,4 +1,4 @@
-package com.neobis.tourguidestudyplan
+package com.neobis.tourguidestudyplan.fragments
 
 import android.content.Intent
 import android.net.Uri
@@ -8,10 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import com.neobis.tourguidestudyplan.adapters.MyListAdapter
+import com.neobis.tourguidestudyplan.model.Place
+import com.neobis.tourguidestudyplan.R
 
 
-class FitnessFragment : Fragment() {
-
+class CinemaFragment : Fragment() {
     private lateinit var listView: ListView
 
     override fun onCreateView(
@@ -22,10 +24,10 @@ class FitnessFragment : Fragment() {
         listView = view.findViewById<ListView>(R.id.place_listview)
 
         val listItems = mutableListOf<Place>(
-            Place("JFC Gym","Спортивный клуб", "Ул. Кара-Кульская 1/4", "Открыто до 23:00", R.drawable.fitness_1,"+996 778 651 264"),
-            Place("Beauty Dance Studio","Студия фитнеса и танцев", "ул. Н. Исанова, 41/1", "Открыто до 22:00", R.drawable.fitness_2,"+996 778 651 264"),
-            Place("UMAY Dance Fit","Студия фитнеса и танцев", "Проспект Манаса 135", "Открыто до 05:00", R.drawable.fitness_3,"+996 778 651 264"),
-            Place("Dasmia","Этно комплекс", "Ул. Максима Горького 23", "Открыто до 22:00", R.drawable.fitness_4,"+996 778 651 264"),
+            Place("Broadway","Кинотеатр", "Asia Mall 3 этаж", "Открыто до 23:00", R.drawable.cinema_1,"+996 778 651 264"),
+            Place("Манас","Кинотеатр", "Проспект Манаса 47А", "Открыто до 22:00", R.drawable.cinema_2,"+996 778 651 264"),
+            Place("Ала-Тоо","Кинотеатр", "Проспект Чуй 187", "Открыто до 05:00", R.drawable.cinema_3,"+996 778 651 264"),
+            Place("ЦУМ Cinema","Кинотеатр", "Ул. Шопокова", "Открыто до 22:00", R.drawable.cinema_4,"+996 778 651 264"),
         )
 
         val adapter = MyListAdapter(requireContext(), listItems)
@@ -47,5 +49,3 @@ class FitnessFragment : Fragment() {
         return view
     }
 }
-
-

@@ -1,4 +1,4 @@
-package com.neobis.tourguidestudyplan
+package com.neobis.tourguidestudyplan.fragments
 
 import android.content.Intent
 import android.net.Uri
@@ -8,6 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import com.neobis.tourguidestudyplan.adapters.MyListAdapter
+import com.neobis.tourguidestudyplan.model.Place
+import com.neobis.tourguidestudyplan.R
 
 
 class RestaurantFragment : Fragment() {

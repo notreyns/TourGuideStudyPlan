@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FitnessFragment">
+    tools:context=".fragments.FitnessFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/place_listview"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="16dp"
-
         android:layout_height="match_parent"
         />
 
